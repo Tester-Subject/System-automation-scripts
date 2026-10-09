@@ -13,7 +13,7 @@ while True:
   print(f"Your cpu has {Num_of_cores} cores", flush = True)
 
 #Now warning logic is needed for healthcare monitoring
-  if cpu_usage > 5:
+  if cpu_usage > 0:
     print("WARNING, A DANGEROUS AMOUNT OF ACTIVITY HAS BEEN DETECTED ON YOUR CPU")
   time.sleep(5)
   print(f"-------------------------------", flush = True)

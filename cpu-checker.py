@@ -10,7 +10,7 @@ while True:
   print(f"Current CPU usage is {cpu_usage}%", flush = True)
 #To get number of processes occuring in the cpu use "psutil.pids()"
   Num_of_processes = len(psutil.pids())
-  print(f"number of processes is equal to: {num_of_processes}", flush = True)
+  print(f"number of processes is equal to: {Num_of_processes}", flush = True)
 #For number of cpu cores i need to use the function "psutil.cpu_count()"
   Num_of_cores = psutil.cpu_count()
   print(f"Your cpu has {Num_of_cores} cores", flush = True)

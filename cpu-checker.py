@@ -8,13 +8,15 @@ while True:
 #To get cpu i need to use the function "psutil.cpu_percent(interval=1)"
   cpu_usage = psutil.cpu_percent(interval=1)
   print(f"Current CPU usage is {cpu_usage}%", flush = True)
-
+#To get number of processes occuring in the cpu use "psutil.pids()"
+  Num_of_processes = len(psutil.pids())
+  print(f"number of processes is equal to: {num_of_processes}", flush = True)
 #For number of cpu cores i need to use the function "psutil.cpu_count()"
   Num_of_cores = psutil.cpu_count()
   print(f"Your cpu has {Num_of_cores} cores", flush = True)
 
 #Now warning logic is needed for healthcare monitoring
-  if cpu_usage > 0:
+  if cpu_usage > 80:
     print("WARNING, A DANGEROUS AMOUNT OF ACTIVITY HAS BEEN DETECTED ON YOUR CPU")
   sys.stdout.flush()
   time.sleep(5)

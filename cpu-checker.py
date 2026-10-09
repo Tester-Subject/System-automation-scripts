@@ -13,5 +13,6 @@ while true:
   print("Your cpu has "+ Num_of_cores + "cores")
 
 #Now warning logic is needed for healthcare monitoring
-  if cpu_usage > 80:
+  if cpu_usage > 5:
     Print("WARNING, A DANGEROUS AMOUNT OF ACTIVITY HAS BEEN DETECTED ON YOUR CPU")
+  time.sleep(5)

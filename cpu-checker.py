@@ -1,5 +1,6 @@
 import psutil
 import time
+import sys
 
 print("----------First project----------")
 #Place a while true to keep it running in the background
@@ -15,5 +16,6 @@ while True:
 #Now warning logic is needed for healthcare monitoring
   if cpu_usage > 0:
     print("WARNING, A DANGEROUS AMOUNT OF ACTIVITY HAS BEEN DETECTED ON YOUR CPU")
+  sys.stdout.flush()
   time.sleep(5)
   print(f"-------------------------------", flush = True)

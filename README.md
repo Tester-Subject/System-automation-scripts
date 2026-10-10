@@ -1,24 +1,24 @@
 # System-automation-scripts
-A collection of weekly python tool to monitor and fix system issues.
+A collection of weekly Python tools designed to monitor and troubleshoot system issues.
 # Programs previously created
-*#CPU basic diagnostic report*
+### **CPU basic diagnostic report**
 
-**purpose** 
+ **purpose** 
 
-Made to solve basic issue of computer maintenance within the cpu
+- Created to assist with basic computer maintenance by monitoring CPU activity and system performance
 
-**Technology used**
+ **Technology used**
 
-python, Libraries used: psutil, sleep and sys
+- python, Libraries used: psutil, sleep and sys
 
-**Features**
+ **Features**
 
-CPU monitoring, RAM monitoring and alert system
+- CPU monitoring, RAM monitoring and alert system
 
-**Lesson learned**
+ **Lesson learned**
 
-Reminded me of basic python coding while using external libraries and professionalism within software
+- Reminded me of basic python coding while using external libraries and professionalism within software
 
-**Future improvements**
+ **Future improvements**
 
-Data logging(biggest change i can do)
+- Data logging(biggest change i can do)

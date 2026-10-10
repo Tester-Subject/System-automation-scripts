@@ -1,4 +1,4 @@
 # System-automation-scripts
 A collection of weekly python tool to monitor and fix system issues.
-#  PROGRAMS ALREADY CREATED:
+# Programs previously created
 CPU basic diagnostic report

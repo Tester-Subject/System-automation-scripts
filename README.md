@@ -8,9 +8,9 @@ A collection of weekly Python tools designed to monitor and troubleshoot system 
 
 ---
 
-## Programs Previously Created
+## Last program created
 
-### Project 1: CPU Basic Diagnostic Report
+### Project: CPU Basic Diagnostic Report
 
 **Purpose**
 - Created to assist with basic computer maintenance by monitoring CPU activity and system performance.

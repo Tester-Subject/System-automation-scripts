@@ -13,7 +13,7 @@ print("----------Second project----------")
 #To start saving to a csv i need to make a csv file path
 def savetime(data, folder = "output"):
   #formats the date and time
-  timestamp = date.timenow.strftime("%y-%m-%d_%H-%M-%S")
+  timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
   #files the timestamp
   filename = f"data_{timestamp}.csv"
   csv_file_path = 'example.csv'

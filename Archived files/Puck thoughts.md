@@ -4,7 +4,7 @@
 - Created to replicate puck but in text form
 
 **Status**
--Unfinished
+- Unfinished
 
 **Technology Used**
 - Python

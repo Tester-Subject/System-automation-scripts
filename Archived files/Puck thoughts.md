@@ -3,14 +3,15 @@
 **Purpose**
 - Created to replicate puck but in text form
 
+**Status**
+-Unfinished
+
 **Technology Used**
 - Python
-- Libraries: random
+- Libraries: random, time
 
 **Features**
-- CPU monitoring
-- RAM monitoring
-- Alert system
+- Frame rate to move each player and ball
 
 **Lessons Learned**
 - Refreshed my Python fundamentals.
@@ -18,6 +19,6 @@
 - Improved my understanding of software development practices.
 
 **Future Improvements**
-- Data logging
-- Historical performance tracking
-- Process identification
+- Potentially making the game smaller so that the ball moves across faster
+- Potentially could be done in pygame to create more stunning and faster visuals to grab attention
+- Potentially use more filling text characters to create the effect of a "sea of darkness"

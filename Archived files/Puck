@@ -1,1 +1,199 @@
+import random
+import time
+print("this is pong")
+def printboard():
+    for row in boards:
+        print (row)
+    for i in range(0, 4):
+        for j in range(0, 4):
+            print(boards[i][j], end = "")
+        print()
+boards = [[" "," "," "," ", " "," "," "," "," "," "," "," "," ", " " ],
+     [" "," "," "," ", " "," "," "," "," "," "," "," "," ", " " ],
+     [" "," "," "," ", " "," "," "," "," "," "," "," "," ", " " ],
+     [" "," "," "," ", " "," "," "," "," "," "," "," "," ", " " ],
+     [" "," "," "," ", " "," "," "," "," "," "," "," "," ", " " ],
+     [" "," "," "," ", " "," "," "," "," "," "," "," "," ", " " ],
+     [" "," "," "," ", " "," "," "," "," "," "," "," "," ", " " ],
+     [" "," "," "," ", " "," "," "," "," "," "," "," "," ", " " ],
+     [" "," "," "," ", " "," "," "," "," "," "," "," "," ", " " ],
+     [" "," "," "," ", " "," "," "," "," "," "," "," "," ", " " ],
+     [" "," "," "," ", " "," "," "," "," "," "," "," "," ", " " ],
+     [" "," "," "," ", " "," "," "," "," "," "," "," "," ", " " ],
+     [" "," "," "," ", " "," "," "," "," "," "," "," "," ", " " ],
+     [" "," "," "," ", " "," "," "," "," "," "," "," "," ", " " ],
+     [" "," "," "," ", " "," "," "," "," "," "," "," "," ", " " ],
+     [" "," "," "," ", " "," "," "," "," "," "," "," "," ", " " ],
+     [" "," "," "," ", " "," "," "," "," "," "," "," "," ", " " ],
+     [" "," "," "," ", " "," "," "," "," "," "," "," "," ", " " ],
+     [" "," "," "," ", " "," "," "," "," "," "," "," "," ", " " ],
+     [" "," "," "," ", " "," "," "," "," "," "," "," "," ", " " ]]
+turn = random.randint(1,2)
+score1 = 0
+score2 = 0
+ballx = 6
+ballx2 = 7
+ballx3 = 6
+ballx4 = 7
+bally = 9
+bally2 = 10
+bally3 = 10
+bally4 = 9
+
+
+y = (9)
+x = (0)
+y2 =(9)
+x2 =(13)
+a = 10
+b = 0
+c = 8
+d = 0
+a2 = 10
+b2 = 13
+c2 = 8
+d2 = 13
+ball1 = boards[bally][ballx] = "N"
+ball2 = boards[bally2][ballx2] = "N"
+ball3 = boards[bally3][ballx3] = "N"
+ball4 = boards[bally4][ballx4] = "N"
+
+bar = boards[y][x] = "|"
+bar2 = boards[a][b] = "|"
+bar3 = boards[c][d] = "|"
+bars = boards[y2][x2] = "|"
+bars2 = boards[a2][b2] = "|"
+bars3 = boards[c2][d2] = "|"
+
+while score1 !=5 and score2 != 5:
+    printboard()
+    
+    boards[x][y] = "*"
+
+    for i in range(0,9):
+        if turn == 1:
+                time.sleep(2)
+                move = input("choose a way to move: ")
+                
+                printboard()
+                boards[bally][ballx] = " "
+                boards[bally2][ballx2] = " "
+                boards[bally3][ballx3] = " "
+                boards[bally4][ballx4] = " "
+
+                bally -= 1
+                ballx -= 1
+                bally2 -= 1
+                ballx2 -= 1
+                bally3 -= 1
+                ballx3 -= 1
+                bally4 -= 1
+                ballx4 -= 1
+
+                boards[bally][ballx] = "N"
+                boards[bally2][ballx2] = "N"
+                boards[bally3][ballx3] = "N"
+                boards[bally4][ballx4] = "N"
+        if turn == 2:
+                time.sleep(2)
+                move = input("choose a way to move: ")
+                printboard()
+                boards[bally][ballx] = " "
+                boards[bally2][ballx2] = " "
+                boards[bally3][ballx3] = " "
+                boards[bally4][ballx4] = " "
+
+                bally += 1
+                ballx += 1
+                bally2 += 1
+                ballx2 += 1
+                bally3 += 1
+                ballx3 += 1
+                bally4 += 1
+                ballx4 += 1
+
+                boards[bally][ballx] = "N"
+                boards[bally2][ballx2] = "N"
+                boards[bally3][ballx3] = "N"
+                boards[bally4][ballx4] = "N"
+        if move == "up":
+            boards[y][x] = " "
+            boards[a][b] = " "
+            boards[c][d] = " "
+            y -= 1
+            a -= 1
+            c -= 1
+            boards[y][x] = "|"
+            boards[a][b] = "|"
+            boards[c][d] = "|"
+        print("coordinates for bar ", y , " ", x)
+        print("coordinates for bar", y2 , " ", x2)
+        print("coordinates for bar",c , " ", d)
+        print("coordinates for ball ", bally , " ", ballx)
+        print("coordinates for ball", bally2 , " ", ballx2)
+        print("coordinates for ball",bally3 , " ", ballx3)
+        print("coordinates for ball",bally4, " ", ballx4)
+        if move == "down":
+            boards[y][x] = "*"
+            boards[a][b] = "*"
+            boards[c][d] = "*"
+            y += 1
+            a += 1
+            c += 1
+            
+            boards[y][x] = "|"
+            boards[a][b] = "|"
+            boards[c][d] = "|"
+        if "|" == "N":
+            if turn == 1:
+                time.sleep(2)
+                move = input("choose a way to move: ")
+                printboard()
+                boards[bally][ballx] = " "
+                boards[bally2][ballx2] = " "
+                boards[bally3][ballx3] = " "
+                boards[bally4][ballx4] = " "
+
+                bally += 1
+                
+                bally2 += 1
+                
+                bally3 += 1
+                
+                bally4 += 1
+                
+
+                boards[bally][ballx] = "N"
+                boards[bally2][ballx2] = "N"
+                boards[bally3][ballx3] = "N"
+                boards[bally4][ballx4] = "N"
+                
+        else:
+            if turn  == 2:
+                time.sleep(2)
+                move = input("choose a way to move: ")
+                
+                printboard()
+                boards[bally][ballx] = " "
+                boards[bally2][ballx2] = " "
+                boards[bally3][ballx3] = " "
+                boards[bally4][ballx4] = " "
+
+                bally -= 1
+                ballx -= 1
+                bally2 -= 1
+                ballx2 -= 1
+                bally3 -= 1
+                ballx3 -= 1
+                bally4 -= 1
+                ballx4 -= 1
+
+                boards[bally][ballx] = "N"
+                boards[bally2][ballx2] = "N"
+                boards[bally3][ballx3] = "N"
+                boards[bally4][ballx4] = "N"
+                    
+            
+            
+        
 

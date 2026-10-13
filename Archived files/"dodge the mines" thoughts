@@ -3,21 +3,22 @@
 **Purpose**
 - Created to replicate minesweeper without hidden mines
 
+**status** 
+- Finished
+
 **Technology Used**
 - Python
-- Libraries: psutil, time, sys
+- Libraries: random library
 
 **Features**
-- CPU monitoring
-- RAM monitoring
-- Alert system
+- Death on touch with mine
+- Success with touching of flag
 
 **Lessons Learned**
-- Refreshed my Python fundamentals.
-- Learned to use external Python libraries.
-- Improved my understanding of software development practices.
+- How to manipulate text games and create their "boards"
+- Learned to use random function within a full game.
+- Improved my understanding of software development practices and how data is printed in each iteration
 
 **Future Improvements**
-- Data logging
-- Historical performance tracking
-- Process identification
+- More random movement such that the mines are not easily read and a full path is not as obvious
+- Could be done in pygame to enhance visuals for user interraction

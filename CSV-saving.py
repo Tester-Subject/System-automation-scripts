@@ -16,9 +16,9 @@ def savetime(data, folder = "output"):
   timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
   #files the timestamp
   filename = f"data_{timestamp}.csv"
-  csv_file_path = 'example.csv'
+  csv_file_path = filename
   #This line will open the csv file in write mode allowing me to save data
-  with open(csv_file_path, mode = 'w', newline = '') as file:
+  with open(csv_file_path, mode = 'a', newline = '') as file:
     #line below allows me to write data to a csv file
     writer = csv.writer(file)
     writer.writerows(data)

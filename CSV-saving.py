@@ -33,9 +33,9 @@ while True:
   print(f"The total RAM and percent is shown as: {RAM}", flush = True)
   #To cleanly create formally acceptable data submissions i formatted it in an array
   data = [
-    [f"Your CPU usage is: {cpu_usage}"],
-    [f"Your Number of processes is: {Num_of_processes}"],
-    [f"Your total ram and percent is shown as: {RAM}"]
+    [f"{timestamp} {cpu_usage}"],
+    [f"{Num_of_processes}"],
+    [f"{RAM}"]
   ]
   if cpu_usage > 80 or RAM.percent > 80:
     print("WARNING, A DANGEROUS AMOUNT OF ACTIVITY HAS BEEN DETECTED ON YOUR CPU")

@@ -16,9 +16,6 @@ filename = f"data_{timestamp}.csv"
 #To start saving to a csv i need to make a csv file path
 def savetime(data, folder = "output"):
   #formats the date and time
-  timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-  #files the timestamp
-  filename = f"data_{timestamp}.csv"
   csv_file_path = filename
   os.makedirs(folder, exist_ok=True)
   csv_file_path = os.path.join(folder, filename)

@@ -12,7 +12,7 @@ import os
 print("----------Second project----------")
 timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
 #files the timestamp
-filename = f"data_{timestamp}.csv"
+filename = "system_log.csv"
 #To start saving to a csv i need to make a csv file path
 def savetime(data, folder = "output"):
   #formats the date and time

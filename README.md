@@ -4,16 +4,16 @@ A collection of weekly Python tools designed to monitor and troubleshoot system 
 
 ## Statistics
 
-**Number of programs created so far:** 1
+**Number of programs created so far:** 2
 
 ---
 
 ## Last program created
 
-### Project: CPU Basic Diagnostic Report
+### Project: CSV saving
 
 **Purpose**
-- Created to assist with basic computer maintenance by monitoring CPU activity and system performance.
+- Created to assist with basic computer maintenance by monitoring CPU activity and system performance and record each piece of data inside an excel spreadsheet for analysis
 
 **Technology Used**
 - Python
@@ -33,3 +33,4 @@ A collection of weekly Python tools designed to monitor and troubleshoot system 
 - Data logging
 - Historical performance tracking
 - Process identification
+<img width="391" height="329.5" alt="image" src="https://github.com/user-attachments/assets/d14c77b2-63c9-4c3b-ac15-e011631bd9ac" />

@@ -10,6 +10,9 @@ from datetime import datetime
 import os
 
 print("----------Second project----------")
+timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+#files the timestamp
+filename = f"data_{timestamp}.csv"
 #To start saving to a csv i need to make a csv file path
 def savetime(data, folder = "output"):
   #formats the date and time
@@ -17,6 +20,8 @@ def savetime(data, folder = "output"):
   #files the timestamp
   filename = f"data_{timestamp}.csv"
   csv_file_path = filename
+  os.makedirs(folder, exist_ok=True)
+  csv_file_path = os.path.join(folder, filename)
   #This line will open the csv file in write mode allowing me to save data
   with open(csv_file_path, mode = 'a', newline = '') as file:
     #line below allows me to write data to a csv file
@@ -33,7 +38,8 @@ while True:
   print(f"The total RAM and percent is shown as: {RAM}", flush = True)
   #To cleanly create formally acceptable data submissions i formatted it in an array
   data = [
-    [f"{timestamp} {cpu_usage}"],
+    [f"{datetime.now().strftime("%Y-%m-%d_%H-%M-%S")}"],
+    [f"{cpu_usage}"],
     [f"{Num_of_processes}"],
     [f"{RAM}"]
   ]
